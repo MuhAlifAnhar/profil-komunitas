@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Formulir</h1>
+    <form action="edit.html" method="GET">
+        <div>
+            <label for="name">Nama Lengkap</label>
+            <input type="text" placeholder="nama" id="name" name="name" required>
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" placeholder="email" id="email" name="email" required>
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input type="password" placeholder="password" id="password" name="password" required minlength="3">
+        </div>
+        <div>
+            <label for="number">Nomor Telepon</label>
+            <input type="number" placeholder="number" id="number" name="number" required>
+        </div>
+
+        <button>kirim</button>
+    </form>
+    <hr>
+    <h1>Tanya Jawab</h1>
+    <form action="order.html" method="get">
+        <div>
+            <label for="baju">Baju</label>
+            <input type="radio" name="baju" id="" value="kameja" required> <label for="">kameja</label>
+            <input type="radio" name="baju" id="" value="kaos" required> <label for="">kaos</label>
+        </div>
+
+        <div>
+            <label for="ukuran">Ukuran</label>
+            <select name="ukuran" id="ukuran" required>
+                <option value="m">Besar</option>
+                <option value="l">Besar banget</option>
+                <option value="xl">super besar</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="pesanan">sesuai pesanan</label>
+            <input type="checkbox" name="pesanan" id="pesanan" value="pesanan" required>
+        </div>
+
+        <div>
+            <p>
+                <label for="catatan">Catatan</label>
+            </p>
+            <textarea name="catatan" id="" cols="30" rows="10" value="catatan" required></textarea>
+        </div>
+
+        <button type="submit">Order</button>
+    </form>
+</body>
+</html>
